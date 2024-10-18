@@ -27,3 +27,4 @@ public class MrCoxallStack {
     return String.join(", ", stackAsList);
   }
 }
+

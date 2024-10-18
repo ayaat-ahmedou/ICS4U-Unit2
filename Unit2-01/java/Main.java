@@ -6,8 +6,24 @@
  * @since 2024-10-15
  */
 
-public class main {
+public class Main {
+  /**
+   * Prevent instantiation.
+   * Throw an exception IllegalStateException.
+   * if this ever is called
+   *
+   * @throws IllegalStateException
+   *
+   */
+  private Main() {
+    throw new IllegalStateException("Cannot be instantiated");
+  }
 
+  /**
+   * The starting main() function.
+   *
+   * @param args No args will be used
+   */
   public static void main(String[] args) {
     // This function uses the MrCoxallStack class.
 
