@@ -7,30 +7,23 @@
  */
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MrCoxallStack {
-  // The constructor for the MrCoxallStack string stack class.
-  private ArrayList<String> stackAsList;
+  // The constructor for the MrCoxallStack string stack class has one field.
+  private List<String> stackAsList;
 
   public MrCoxallStack() {
     this.stackAsList = new ArrayList<String>();
   }
 
-  // methods
-  public void pushItem(String pushedString) {
-    // This method returns the stack as a string.
-    String stackValues = "";
-
-    for (String value : this.stackAsList) {
-      stackValues += value + ", ";
-    }
-
-  // Remove the last two characters (trailing comma and space)
-  if (stackValues.length() > 0) {
-    stackValues = stackValues.substring(0, stackValues.length() - 2);
+  // Method to push a string into a stack.
+  public void pushItem(String item) {
+    stackAsList.add(item);
   }
 
-  return stackValues;
+  // Method to return the stack as a comma-seperated string.
+  public String showStack() {
+    return String.join(", ", stackAsList);
   }
 }
-
