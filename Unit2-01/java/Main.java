@@ -15,40 +15,40 @@ public class Main {
    * @throws IllegalStateException
    *
    */
-  private Main() {
-    throw new IllegalStateException("Cannot be instantiated");
-  }
+    private Main() {
+        throw new IllegalStateException("Cannot be instantiated");
+    }
 
-  /**
-   * The starting main() function.
-   *
-   * @param args No args will be used
-   */
-  public static void main(String[] args) {
-    // This function uses the MrCoxallStack class.
+    /**
+     * The starting main() function.
+     *
+     * @param args No args will be used
+     */
+     public static void main(String[] args) {
+     // This function uses the MrCoxallStack class.
 
-    // Creates an instance of MrCoxallStack for fruits.
-    MrCoxallStack fruitStack = new MrCoxallStack();
-    fruitStack.pushItem("apple");
-    fruitStack.pushItem("banana");
-    fruitStack.pushItem("cherry");
-    System.out.println("Fruit items: " + fruitStack.showStack());
+        // Creates an instance of MrCoxallStack for fruits.
+        MrCoxallStack fruitStack = new MrCoxallStack();
+        fruitStack.pushItem("apple");
+        fruitStack.pushItem("banana");
+        fruitStack.pushItem("cherry");
+        System.out.println("Fruit items: " + fruitStack.showStack());
 
-    // Creates an instance of MrCoxallStack for colors.
-    MrCoxallStack colorStack = new MrCoxallStack();
-    colorStack.pushItem("red");
-    colorStack.pushItem("green");
-    colorStack.pushItem("blue");
-    System.out.println("Color items: " + colorStack.showStack());
+        // Creates an instance of MrCoxallStack for colors.
+        MrCoxallStack colorStack = new MrCoxallStack();
+        colorStack.pushItem("red");
+        colorStack.pushItem("green");
+        colorStack.pushItem("blue");
+        System.out.println("Color items: " + colorStack.showStack());
 
-    // Creates an instance of MrCoxallStack for dog breeds.
-    MrCoxallStack dogStack = new MrCoxallStack();
-    dogStack.pushItem("poodle");
-    dogStack.pushItem("retriever");
-    dogStack.pushItem("beagle");
-    System.out.println("Dog items: " + dogStack.showStack());
+        // Creates an instance of MrCoxallStack for dog breeds.
+        MrCoxallStack dogStack = new MrCoxallStack();
+        dogStack.pushItem("poodle");
+        dogStack.pushItem("retriever");
+        dogStack.pushItem("beagle");
+        System.out.println("Dog items: " + dogStack.showStack());
 
-    System.out.println("\nDone.");
-  }
+        System.out.println("\nDone.");
+    }
 }
 
