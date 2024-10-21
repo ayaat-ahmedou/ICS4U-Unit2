@@ -8,7 +8,7 @@
 
 export class MrCoxallStack {
   // This class defines a MrCoxallStack string stack
-  private stackAsList: string[]
+  private readonly stackAsList: string[]
 
   constructor () {
     // The constructor for the MrCoxallStack string stack class.
