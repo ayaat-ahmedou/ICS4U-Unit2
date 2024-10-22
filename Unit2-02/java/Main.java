@@ -15,13 +15,13 @@ public class Main {
   public static void main(String[] args) {
     // Creates an instance for fruit.
     MrCoxallStack fruit = new MrCoxallStack();
-    fruitStack.pushItem("apple");
-    fruitStack.pushItem("banana");
-    fruitStack.pushItem("cherry");
-    System.out.println("Fruit items: " + fruitStack.showStack());
-    String topFruit = fruitStack.popItem();
+    fruit.pushItem("apple");
+    fruit.pushItem("banana");
+    fruit.pushItem("cherry");
+    System.out.println("Fruit items: " + fruit.showStack());
+    String topFruit = fruit.popItem();
     System.out.println("Popped fruit item: " + topFruit);
-    System.out.println("Fruit items: " + fruitStack.showStack());
+    System.out.println("Fruit items: " + fruit.showStack());
     System.out.println();
 
     //Creates an instance for colors.
@@ -30,20 +30,20 @@ public class Main {
     color.pushItem("green");
     color.pushItem("blue");
     System.out.println("Color items: " + color.showStack());
-    String topColor = colorStack.popItem();
+    String topColor = color.popItem();
     System.out.println("Popped color item: " + topColor);
-    System.out.println("Dog items: " +colorStack.showStack());
+    System.out.println("Dog items: " +color.showStack());
     System.out.println();
 
     // Creates an instance for dog breeds.
-    MrCoxallStack dogStack = new MrCoxallStack();
-    dogStack.pushItem("poodle");
-    dogStack.pushItem("retriever");
-    dogStack.pushItem("beagle");
-    System.out.println("Dog items: " + dogStack.showStack());
-    String topDog = dogStack.popItem();
+    MrCoxallStack dog = new MrCoxallStack();
+    dog.pushItem("poodle");
+    dog.pushItem("retriever");
+    dog.pushItem("beagle");
+    System.out.println("Dog items: " + dog.showStack());
+    String topDog = dog.popItem();
     System.out.println("Popped dog item: " + topDog);
-    System.out.println("Dog items: " + dogStack.showStack());
+    System.out.println("Dog items: " + dog.showStack());
     System.out.println();
 
     System.out.println("\nDone.");
