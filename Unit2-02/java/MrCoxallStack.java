@@ -37,7 +37,7 @@ public class MrCoxallStack {
     public String showStack() {
       StringBuilder stackValues = new StringBuilder();
       for (String value : stackAsList) {
-        stackAsList.append(value).append(", ");
+        stackValues.append(value).append(", ");
       }
       // Removes the last two cahracters (trailing comma and space)
       if (stackValues.length() > 0) {
