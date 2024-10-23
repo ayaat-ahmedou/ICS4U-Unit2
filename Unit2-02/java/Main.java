@@ -1,12 +1,13 @@
 /**
  * This is a program using the MrCoxallStack class.
- * <p>
+ *
+ * <p>This is a new paragraph.
  * By:    Ayaat Ahmedou
  * Version: 1.0
  * Since: 2024-10-22
  */
 
-public class Main {
+public final class Main {
     /**
      * Prevent instantiation.
      * Throw an IllegalStateException if this is ever called.
@@ -31,10 +32,10 @@ public class Main {
         fruit.pushedItem("apple");
         fruit.pushedItem("banana");
         fruit.pushedItem("cherry");
-        System.out.println("Fruit items: " + fruit.showStack());
+        System.out.println("1.0 Fruit items: " + fruit.showStack());
         final String topFruit = fruit.popItem();
         System.out.println("Popped fruit item: " + topFruit);
-        System.out.println("Fruit items: " + fruit.showStack());
+        System.out.println("2.0 Fruit items: " + fruit.showStack());
         System.out.println();
 
         // Creates an instance for colors.
@@ -42,10 +43,10 @@ public class Main {
         color.pushedItem("red");
         color.pushedItem("green");
         color.pushedItem("blue");
-        System.out.println("Color items: " + color.showStack());
+        System.out.println("1.0 Color items: " + color.showStack());
         final String topColor = color.popItem();
         System.out.println("Popped color item: " + topColor);
-        System.out.println("Color items: " + color.showStack());
+        System.out.println("2.0 Color items: " + color.showStack());
         System.out.println();
 
         // Creates an instance for dog breeds.
@@ -53,10 +54,10 @@ public class Main {
         dog.pushedItem("poodle");
         dog.pushedItem("retriever");
         dog.pushedItem("beagle");
-        System.out.println("Dog items: " + dog.showStack());
+        System.out.println("1.0 Dog items: " + dog.showStack());
         final String topDog = dog.popItem();
         System.out.println("Popped dog item: " + topDog);
-        System.out.println("Dog items: " + dog.showStack());
+        System.out.println("2.0 Dog items: " + dog.showStack());
         System.out.println();
 
         System.out.println("\nDone.");

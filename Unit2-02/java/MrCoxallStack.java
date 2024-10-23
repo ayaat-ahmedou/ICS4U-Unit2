@@ -35,15 +35,15 @@ public class MrCoxallStack {
      *         an empty string is returned.
      */
     public String showStack() {
-      StringBuilder stackValues = new StringBuilder();
-      for (String value : stackAsList) {
-        stackValues.append(value).append(", ");
-      }
-      // Removes the last two cahracters (trailing comma and space)
-      if (stackValues.length() > 0) {
-        stackValues.setLength(stackValues.length() - 2);
-      }
-      return stackValues.toString();
+        StringBuilder stackValues = new StringBuilder();
+        for (String value : stackAsList) {
+            stackValues.append(value).append(", ");
+        }
+        // Removes the last two cahracters (trailing comma and space)
+        if (stackValues.length() > 0) {
+            stackValues.setLength(stackValues.length() - 2);
+        }
+        return stackValues.toString();
     }
 
     /**
@@ -54,10 +54,10 @@ public class MrCoxallStack {
      * @throws IllegalArgumentException if pushedString is null.
      */
     public void pushedItem(String pushedString) {
-      if (pushedString == null) {
-        throw new IllegalArgumentException("pushedString cannot be null.");
-      }
-      stackAsList.add(pushedString);
+        if (pushedString == null) {
+            throw new IllegalArgumentException("pushedString cannot be null.");
+        }
+        stackAsList.add(pushedString);
     }
 
     /**
@@ -67,13 +67,13 @@ public class MrCoxallStack {
      *         returns the message "The stack is empty!"
      */
     public String popItem() {
-      if (stackAsList.size() > 0) {
-        String topItem = stackAsList.get(stackAsList.size() - 1);
-        stackAsList.remove(stackAsList.size() - 1);
-        return topItem;
-      } else {
-          return "The stack is empty!";
-      }
+        if (stackAsList.size() > 0) {
+            String topItem = stackAsList.get(stackAsList.size() - 1);
+            stackAsList.remove(stackAsList.size() - 1);
+            return topItem;
+        } else {
+            return "The stack is empty!";
+        }
     }
 }
 
