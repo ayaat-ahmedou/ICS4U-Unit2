@@ -35,7 +35,7 @@ public class MrCoxallStack {
      *         an empty string is returned.
      */
     public String showStack() {
-        StringBuilder stackValues = new StringBuilder();
+        final StringBuilder stackValues = new StringBuilder();
         for (String value : stackAsList) {
             stackValues.append(value).append(", ");
         }
@@ -49,7 +49,7 @@ public class MrCoxallStack {
     /**
      * Pushes a string onto the stack.
      *
-     * @param pushed string to be pushed onto the stack.
+     * @param pushedString string to be pushed onto the stack.
      *        Cannot be null.
      * @throws IllegalArgumentException if pushedString is null.
      */
@@ -67,13 +67,15 @@ public class MrCoxallStack {
      *         returns the message "The stack is empty!"
      */
     public String popItem() {
+        final String result;
         if (stackAsList.size() > 0) {
-            String topItem = stackAsList.get(stackAsList.size() - 1);
+            final String topItem = stackAsList.get(stackAsList.size() - 1);
             stackAsList.remove(stackAsList.size() - 1);
-            return topItem;
+            result = topItem;
         } else {
-            return "The stack is empty!";
+            result = "This stack is empty!";
         }
+        return result;
     }
 }
 

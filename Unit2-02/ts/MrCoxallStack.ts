@@ -21,7 +21,7 @@ export class MrCoxallStack {
   // This method returns the stack as a string.
   // Returns:
   // string: The stack as a string.
-  showStack (): string {
+  get showStack(): string {
     let stackValues = ''
     for (const value of this.stackAsList) {
       stackValues += value + ', '
