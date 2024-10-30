@@ -8,7 +8,7 @@
 
 export class MrCoxallStack {
   // This class defines a MrCoxallStack string stack
-  private stackAsList: string[]
+  readonly stackAsList: string[]
 
   constructor () {
     // The constructor for the MrCoxallStack string stack class.
@@ -21,7 +21,7 @@ export class MrCoxallStack {
   // This method returns the stack as a string.
   // Returns:
   // string: The stack as a string.
-  get showStack(): string {
+  get showStack (): string {
     let stackValues = ''
     for (const value of this.stackAsList) {
       stackValues += value + ', '
@@ -32,12 +32,12 @@ export class MrCoxallStack {
   }
 
   // Checks if the stack is empty.
-  get isEmpty(): boolean {
+  get isEmpty (): boolean {
     return this.stackAsList.length === 0
   }
 
   // Shows the size of the stack.
-  get size(): number {
+  get size (): number {
     return this.stackAsList.length
   }
 
