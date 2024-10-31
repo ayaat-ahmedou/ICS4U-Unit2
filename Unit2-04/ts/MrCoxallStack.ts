@@ -56,5 +56,18 @@ export class MrCoxallStack {
     }
     return this.stackAsList.pop() as string
   }
+
+  // This method returns the top value without removing it.
+  peekItem(): string {
+    if (this.isEmpty) {
+      throw new Error('Cannot peek from an empty stack.')
+    }
+    return this.stackAsList[this.stackAsList.length - 1]
+  }
+
+  // This method clears all items from the stack.
+  clearStack(): void {
+    this.stackAsList = []
+  }
 }
 

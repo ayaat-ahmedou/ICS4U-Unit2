@@ -31,5 +31,8 @@ console.log(`Fruit items: ${fruitStack.showStack}`)
 console.log(`The size of the stack is: ${fruitStack.size}`)
 console.log(`Is the stack empty? ${fruitStack.isEmpty.toString()}`)
 
+// Checks what the top fruit is and again it's size.
+
+
 console.log('\nDone.')
 
