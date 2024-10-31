@@ -58,7 +58,7 @@ public class MrCoxallStack {
     /**
      * Shows the size of the stack.
      *
-     * @returns string of size of the stack.
+     * @return string of size of the stack.
      */
     public int getSize() {
         return this.stackAsList.size();
