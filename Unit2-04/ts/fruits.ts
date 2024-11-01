@@ -1,4 +1,3 @@
-
 /**
  * This is a program using the MrCoxallStack class.
  *
@@ -32,7 +31,13 @@ console.log(`The size of the stack is: ${fruitStack.size}`)
 console.log(`Is the stack empty? ${fruitStack.isEmpty.toString()}`)
 
 // Checks what the top fruit is and again it's size.
+console.log(`The top fruit is: ${fruitStack.peekItem()}`)
+console.log(`The size of the stack is: ${fruitStack.size}`)
 
+// Empties the stack and again checks its size and if it is empty.
+console.log('Empting the stack ...')
+fruitStack.clearStack()
+console.log(`The size of the stack is: ${fruitStack.size}`)
+console.log(`Is the stack empty? ${fruitStack.isEmpty.toString()}`)
 
 console.log('\nDone.')
-

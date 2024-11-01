@@ -1,4 +1,3 @@
-
 /**
  * MrCoxallStack string stack.
  *
@@ -58,7 +57,7 @@ export class MrCoxallStack {
   }
 
   // This method returns the top value without removing it.
-  peekItem(): string {
+  peekItem (): string {
     if (this.isEmpty) {
       throw new Error('Cannot peek from an empty stack.')
     }
@@ -66,8 +65,7 @@ export class MrCoxallStack {
   }
 
   // This method clears all items from the stack.
-  clearStack(): void {
+  clearStack (): void {
     this.stackAsList = []
   }
 }
-

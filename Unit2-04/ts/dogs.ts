@@ -1,4 +1,3 @@
-
 /**
  * This is a program using the MrCoxallStack class.
  *
@@ -28,6 +27,16 @@ console.log(`Popped dog item: ${topDog}`)
 console.log(`Dog items: ${dogStack.showStack}`)
 
 // Check the size and if it's empty again
+console.log(`The size of the stack is: ${dogStack.size}`)
+console.log(`Is the stack empty? ${dogStack.isEmpty.toString()}`)
+
+// Checks what the top dog is and again it's size.
+console.log(`The top dog is: ${dogStack.peekItem()}`)
+console.log(`The size of the stack is: ${dogStack.size}`)
+
+// Empties the stack and again checks its size and if it is empty.
+console.log('Empting the stack ...')
+dogStack.clearStack()
 console.log(`The size of the stack is: ${dogStack.size}`)
 console.log(`Is the stack empty? ${dogStack.isEmpty.toString()}`)
 
