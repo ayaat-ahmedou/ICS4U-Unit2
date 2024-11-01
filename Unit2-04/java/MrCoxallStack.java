@@ -104,8 +104,8 @@ public class MrCoxallStack {
      */
     public String peekItem() {
         if (isEmpty()) {
-            throw new IllegalStateException
-                ("Cannot peek from an empty stack.");
+            throw new IllegalStateException(
+            "Cannot peek from an empty stack.");
         }
         return stackAsList.get(stackAsList.size() - 1);
     }
