@@ -8,11 +8,11 @@
 
 export class MrCoxallStack {
   // This class defines a MrCoxallStack string stack
-  readonly stackAsList: string[]
+  stackAsList: string[]
 
+  // The constructor for the MrCoxallStack string stack class.
+  // Args: None
   constructor () {
-    // The constructor for the MrCoxallStack string stack class.
-    // Args: None
     this.stackAsList = []
   }
 
@@ -26,6 +26,7 @@ export class MrCoxallStack {
     for (const value of this.stackAsList) {
       stackValues += value + ', '
     }
+
     // Remove the last two characters (trailing comma and space)
     stackValues = stackValues.slice(0, -2)
     return stackValues
@@ -53,7 +54,7 @@ export class MrCoxallStack {
     if (this.stackAsList.length === 0) {
       return 'The stack is empty! Nothing to pop.'
     }
-    return this.stackAsList.pop() as string
+    return this.stackAsList.pop()
   }
 
   // This method returns the top value without removing it.
