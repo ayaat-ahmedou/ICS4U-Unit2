@@ -35,10 +35,15 @@ public class MrCoxallStack {
      *         an empty string is returned.
      */
     public String showStack() {
+        if (stackAsList.isEmpty()) {
+            return "Stack is empty.";
+        }
+
         final StringBuilder stackValues = new StringBuilder();
         for (String value : stackAsList) {
             stackValues.append(value).append(", ");
         }
+
         // Removes the last two cahracters (trailing comma and space)
         if (stackValues.length() > 0) {
             stackValues.setLength(stackValues.length() - 2);
@@ -47,12 +52,12 @@ public class MrCoxallStack {
     }
 
     /**
-     * Checks if the stack is empty.
+     * Checks if the stack is empty.Returns true if empty, false if not empty.
      *
      * @return a boolean indicating if the stack is empty.
      */
     public boolean isEmpty() {
-        return this.stackAsList.size() == 0;
+        return stackAsList.isEmpty();
     }
 
     /**
