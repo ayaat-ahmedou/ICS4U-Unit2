@@ -22,6 +22,9 @@ export class MrCoxallStack {
   // Returns:
   // string: The stack as a string.
   get showStack (): string {
+    if (this.isEmpty) {
+      return 'Stack is empty'
+    }
     let stackValues = ''
     for (const value of this.stackAsList) {
       stackValues += value + ', '
@@ -32,7 +35,7 @@ export class MrCoxallStack {
     return stackValues
   }
 
-  // Checks if the stack is empty.
+  // Checks if the stack is empty. Returns true if empty, false if not empty.
   get isEmpty (): boolean {
     return this.stackAsList.length === 0
   }
@@ -47,12 +50,16 @@ export class MrCoxallStack {
   // This method pushes a string onto the stack.
   // Args: pusedString (string): The string will be pushed onto the stack.
   pushItem (pushedString: string): void {
+    if (pushedString === null || pushedString === '') {
+      throw new Error('Cannot push null or empty string into stack')
+    }
     this.stackAsList.push(pushedString)
   }
 
+  // This method pops out the last item added (top value) to the stack.
   popItem (): string {
-    if (this.stackAsList.length === 0) {
-      return 'The stack is empty! Nothing to pop.'
+    if (this.isEmpty) {
+      throw new Error('Cannot pop from an empty stack.')
     }
     return this.stackAsList.pop()
   }
