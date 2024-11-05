@@ -35,13 +35,13 @@ public class MrCoxallStack {
      *         an empty string is returned.
      */
     public String showStack() {
+        String stackValues = "";
         if (stackAsList.isEmpty()) {
             return "Stack is empty.";
         }
-
-        final StringBuilder stackValues = new StringBuilder();
-        for (String value : stackAsList) {
-            stackValues.append(value).append(", ");
+        for (String value :
+        this.stackAsList) {
+            stackValues += value + ", ";
         }
 
         // Removes the last two cahracters (trailing comma and space)

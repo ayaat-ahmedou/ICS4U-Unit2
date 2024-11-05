@@ -22,10 +22,10 @@ export class MrCoxallStack {
   // Returns:
   // string: The stack as a string.
   get showStack (): string {
+    let stackValues = ''
     if (this.isEmpty) {
       return 'Stack is empty'
     }
-    let stackValues = ''
     for (const value of this.stackAsList) {
       stackValues += value + ', '
     }
