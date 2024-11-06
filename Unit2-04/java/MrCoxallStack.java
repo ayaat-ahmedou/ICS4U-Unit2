@@ -30,18 +30,16 @@ public class MrCoxallStack {
 
     /**
      * Returns as a string with each item seperated by a comma and space.
+     * Added StringBuilder as suggested by CS50.ai because it would not
+     *    compile when I just used a for loop.
      *
      * @return a string reprsentaion of the stack. If the stack is empty,
      *         an empty string is returned.
      */
     public String showStack() {
-        String stackValues = "";
-        if (stackAsList.isEmpty()) {
-            return "Stack is empty.";
-        }
-        for (String value :
-        this.stackAsList) {
-            stackValues += value + ", ";
+        final String showStack stackValues = new StringBuilder();
+        for (String value ; stackAsList) {
+            stackValues.append(value).append(", ");
         }
 
         // Removes the last two cahracters (trailing comma and space)
