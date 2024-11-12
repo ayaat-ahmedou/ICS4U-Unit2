@@ -7,5 +7,5 @@
  */
 
 export Vehicle class {
-  // This class defines a Vehicle 
+  // This class defines a Vehicle.
 }
