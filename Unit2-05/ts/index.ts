@@ -1,4 +1,3 @@
-console.log("Hello via Bun!");
 /**
 * This is the main code that runs
  * with the Vehicle Class.
@@ -7,7 +6,7 @@ console.log("Hello via Bun!");
  * Since:   2024-11-15
  */
 
-import Vehicle from './Vehicle'
+import {Vehicle} from './Vehicle'
 
 console.log('Created Ford focus')
 const fordFocus = new Vehicle('white', 'B40-C4RR0', 4, 284)
@@ -37,7 +36,7 @@ ferrari.accelerate(100, 4)
 console.log(`New speed: ${ferrari.speed}`)
 
 console.log('Breaking, 10 of power for 10 sec.')
-ferrari.break(10, 10)
+ferrari.brake(10, 10)
 console.log(`New speed: ${ferrari.speed}`)
 
 console.log('Changing color:')
@@ -58,7 +57,7 @@ citroenAmi.accelerate(5, 10)
 console.log(`New speed: ${citroenAmi.speed}`)
 
 console.log('Breaking, 2 of power for 10 sec.')
-citroenAmi.break(2, 10)
+citroenAmi.brake(2, 10)
 console.log(`New speed: ${citroenAmi.speed}`)
 
 console.log('Changing color:')

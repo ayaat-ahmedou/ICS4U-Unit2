@@ -10,15 +10,16 @@ export class Vehicle {
   // This class defines a Vehicle.
   // Private fields for internal properties.
   private licensePlate: string
-  private color: string
+  public color: string
   private readonly doors: number
-  private speed: number = 0
+  public speed: number = 0
   private readonly maxSpeed: number
 
   // The constructor for the Vehicle class.]
   // Initializes the vehicles properties that are set by the user.
   constructor(licensePlate: string, color: string, doors: number, maxSpeed:
         number) {
+    this.speed = 0
     this.licensePlate = licensePlate
     this.color = color
     this.doors = doors
@@ -85,7 +86,10 @@ export class Vehicle {
 
   // Status method that shows the current status of the vehicles properties.
   status() : string {
-    return `License Plate: ${this.licensePlate}\nColor: ${this.color}\nDoors:
-    ${this.doors}\ncurrent speed: ${this.speed}\nmax speed: ${this.maxSpeed}`
+    return `-> Speed : ${this.speed}
+-> Max Speed: ${this.maxSpeed}
+-> Number of doors: ${this.doors}
+-> License Plate: ${this.licensePlate}
+-> Color: ${this.color}`
   }
 }
