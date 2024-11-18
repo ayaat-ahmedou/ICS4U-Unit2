@@ -77,8 +77,8 @@ export class Vehicle {
 
   // Break method that decrease vehicle speed but cannot go below zero, and is
   //  calculated with the rate of decelerationandtime it takes to break.
-  brake(brakePower: number, brakeTime: number): void {
-    this.speed = this.speed - (brakePower * brakeTime)
+  break(breakPower: number, breakTime: number): void {
+    this.speed = this.speed - (breakPower * breakTime)
     if (this.speed < 0) {
       this.speed = 0 // Speed cannot be negative
     }
