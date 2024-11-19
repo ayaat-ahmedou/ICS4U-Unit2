@@ -6,7 +6,7 @@
  * Since:   2024-11-15
  */
 
-import {Vehicle} from './Vehicle'
+import { Vehicle } from './Vehicle'
 
 console.log('Created Ford focus')
 const fordFocus = new Vehicle('B40-C4RR0', 'white', 4, 284)

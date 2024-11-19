@@ -41,11 +41,11 @@ final class Main {
         final int fiveConst = 5;
 
         System.out.println("Created Ford focus");
-        final Vehicle fordFocus = new Vehicle("white", "B40-C4RR0",
+        final Vehicle fordFocus = new Vehicle("B40-C4RR0", "white",
             fourConst, twoHundredEightyFourConst);
 
         System.out.println(statusString);
-        fordFocus.status();
+        System.out.println(fordFocus.status());
 
         System.out.println("Accelerating, 10 of power for 10 sec.");
         fordFocus.accelerate(tenConst, tenConst);
@@ -59,11 +59,11 @@ final class Main {
 
         // New Ferrari
         System.out.println("Created a Ferrari");
-        final Vehicle ferrari = new Vehicle("red", "VHD-35HU", 2,
+        final Vehicle ferrari = new Vehicle("VHD-35HU", "red", 2,
             threeHundredTwentyConst);
 
         System.out.println(statusString);
-        ferrari.status();
+        System.out.println(ferrari.status());
 
         System.out.println("Accelerating, 100 of power for 4 sec.");
         ferrari.accelerate(oneHundredConst, fourConst);
@@ -81,11 +81,11 @@ final class Main {
 
         // New Citroen Ami
         System.out.println("Created a Citroen Ami");
-        final Vehicle citroenAmi = new Vehicle("blue", "FS-695-DQ",
+        final Vehicle citroenAmi = new Vehicle("FS-695-DQ", "blue",
             fiveConst, fortyFiveConst);
 
         System.out.println(statusString);
-        citroenAmi.status();
+        System.out.println(citroenAmi.status());
 
         System.out.println("Accelerating, 5 of power for 10 sec.");
         citroenAmi.accelerate(fiveConst, tenConst);

@@ -17,8 +17,8 @@ export class Vehicle {
 
   // The constructor for the Vehicle class.]
   // Initializes the vehicles properties that are set by the user.
-  constructor(licensePlate: string, color: string, doors: number, maxSpeed:
-        number) {
+  constructor (licensePlate: string, color: string, doors: number, maxSpeed:
+  number) {
     this.speed = 0
     this.licensePlate = licensePlate
     this.color = color
@@ -30,54 +30,55 @@ export class Vehicle {
 
   // Getter methods for the vehicle properties
   // Gets and returns license plate as a string
-  get licensePlate(): string {
+  get getLicensePlate (): string {
     return this.licensePlate
   }
 
+  // Setter for license plate
+  set setLicensePlate (licensePlate: string) {
+    this.licensePlate
+  }
+
   // Gets and returns color as a string.
-  get Color(): string {
-        return this.color
+  get getColor (): string {
+    return this.color
+  }
+
+  // setter for vehicle color.
+  set setColor(color: string) {
+    this.color = color
   }
 
   // Gets and returns the number of doors as a number.
-  get Doors(): number {
+  get getDoors (): number {
     return this.doors
   }
 
   // Gets and returns the speed as a number.
-  get speed(): number {
+  get getSpeed (): number {
     return this.speed
   }
 
   // Gets and returns the maxSpeed as a number.
-  get maxSpeed(): number {
+  get getMaxSpeed (): number {
     return this.maxSpeed
   }
 
   // Setter methods for the vehicle class.
-  // Setter for licensePlate.
-  set licensePlate(licensePlate: string) {
-    this.licensePlate = licensePlate 
-  }
-
-  // Setter for vehicle color.
-  set color(color: string) {
-    this.color = color
-  }
 
   // Public methods
   // Accelaerate method that increases its speed, and is calculated based on
   //  acceleration power and time.
-  accelerate(accelerationPower: number, acceleration: number): void {
+  accelerate (accelerationPower: number, acceleration: number): void {
     this.speed = (accelerationPower * acceleration) + this.speed
     if (this.speed > this.maxSpeed) {
-      this.speed = this.maxSpeed // Makes sure speed !> maxSpeed and if make = 
+      this.speed = this.maxSpeed // Makes sure speed !> maxSpeed and if make =
     }
   }
 
   // Break method that decrease vehicle speed but cannot go below zero, and is
   //  calculated with the rate of decelerationandtime it takes to break.
-  break(breakPower: number, breakTime: number): void {
+  break (breakPower: number, breakTime: number): void {
     this.speed = this.speed - (breakPower * breakTime)
     if (this.speed < 0) {
       this.speed = 0 // Speed cannot be negative
@@ -85,7 +86,7 @@ export class Vehicle {
   }
 
   // Status method that shows the current status of the vehicles properties.
-  status() : string {
+  status (): string {
     return `-> Speed : ${this.speed}
 -> Max Speed: ${this.maxSpeed}
 -> Number of doors: ${this.doors}

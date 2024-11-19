@@ -12,19 +12,19 @@ export class Airplane {
 
   // The constructor for the Airplane number class.
   // Initializes the speed of the Airplane.
-  constructor(speed: number) {
+  constructor (speed: number) {
     this.speed = speed
   }
 
   // Getter and Setter methods
 
   // Getter method gets current speed of airplane.
-  getSpeed(): number {
+  getSpeed (): number {
     return this.speed
   }
 
   // Setter method updates the speed or the airplane.
-  setSpeed(speed: number): void {
+  setSpeed (speed: number): void {
     this.speed = speed
   }
 }
