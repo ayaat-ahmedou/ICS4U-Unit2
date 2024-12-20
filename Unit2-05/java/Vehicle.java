@@ -9,9 +9,9 @@ public class Vehicle {
 
     // Private fields for internal properties.
     private String licensePlate;
-    public String color;
+    private String color;
     private final int doors;
-    public int speed = 0;
+    private int speed = 0;
     private final int maxSpeed;
 
     /**

@@ -1,7 +1,7 @@
 /*
 * This program is the jet class.
 *
-* @author  Johanna Liu
+* @author  Ayaat Ahmedou
 * @version 1.0
 * @since   2024-03-25
 */

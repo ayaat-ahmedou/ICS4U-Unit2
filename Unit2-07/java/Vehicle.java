@@ -13,21 +13,21 @@ public class Vehicle {
     /**
      * Variable.
     */
-    private String colour = "";
+    public String colour = "";
 
     /**
      * Variables for the class.
      *
      * @param speed of the vehicle
     */
-    private double speed;
+    protected double speed;
 
     /**
      * Variables for the class.
      *
      * @param maxSpeed of the vehicle
     */
-    private double maxSpeed;
+    protected double maxSpeed;
 
     /**
      * Creates the base vehicle.

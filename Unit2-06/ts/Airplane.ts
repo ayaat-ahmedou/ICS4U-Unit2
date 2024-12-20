@@ -9,7 +9,7 @@
 // This is the airplane class.
 export class Airplane {
   /** The internal variable that stores speed. */
-  private speed: number
+  protected speed: number
 
   // Constructor.
   public Airplane() {

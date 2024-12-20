@@ -9,7 +9,7 @@
 import { Vehicle } from "./Vehicle"
 
 export class Bike extends Vehicle {
-  private cadense: number
+  protected cadense: number
 
   // variables
   constructor(color: string, maxSpeed: number) {

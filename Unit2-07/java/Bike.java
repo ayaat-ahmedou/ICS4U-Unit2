@@ -14,7 +14,7 @@ public class Bike extends Vehicle {
     /**
      * Variable.
     */
-    private double cadence;
+    protected double cadence;
 
     /**
      * Creates the base truck.
@@ -52,9 +52,7 @@ public class Bike extends Vehicle {
     */
     public String getStatus() {
         final String lineBreak = "\n";
-        String status = " -> Speed: " + this.getSpeed() + lineBreak;
-        status += " -> MaxSpeed: " + this.getMaxSpeed() + lineBreak;
-        status += " -> Color: " + this.getColour() + lineBreak;
+        super.statu();
         status += " -> Cadence: " + this.cadence + lineBreak;
 
         return status;

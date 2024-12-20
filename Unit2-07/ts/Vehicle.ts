@@ -7,15 +7,15 @@
  */
 
 export class Vehicle {
-    private color: string
-    readonly maxSpeed: number
-    readonly _speed: number
+    public color: string
+    protected maxSpeed: number
+    protected speed: number
   
     // variables
     constructor(color: string, maxSpeed: number) {
       this.color = color
       this.maxSpeed = maxSpeed
-      this._speed = 0
+      this.speed = 0
     }
   
     //get colour
@@ -25,7 +25,7 @@ export class Vehicle {
   
     // get current speed
     public get speed() {
-      return this._speed
+      return this.speed
     }
   
     //set colour
@@ -42,17 +42,17 @@ export class Vehicle {
   
     // change speed via accelerating formula
     public accelerate (accelerationPower: number, accelerationTime: number) {
-      this._speed = (accelerationPower * accelerationTime) + this._speed
-      if (this._speed > this.maxSpeed) {
-        this._speed = this.maxSpeed
+      this.speed = (accelerationPower * accelerationTime) + this.speed
+      if (this.speed > this.maxSpeed) {
+        this.speed = this.maxSpeed
       }
     }
   
     // change speed via braking formula
     public brake (breakPower: number, breakTime: number) {
-      this._speed = this._speed - (breakPower * breakTime)
-      if (this._speed < 0) {
-        this._speed = 0
+      this.speed = this.speed - (breakPower * breakTime)
+      if (this.speed < 0) {
+        this.speed = 0
       }
     }
   }

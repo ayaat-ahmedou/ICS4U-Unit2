@@ -9,7 +9,7 @@
 import { Vehicle } from "./Vehicle"
 
 export class Truck extends Vehicle {
-  private licencePlate: string
+  protected licencePlate: string
 
   // variables
   constructor(color: string, maxSpeed: number, licencePlate: string) {

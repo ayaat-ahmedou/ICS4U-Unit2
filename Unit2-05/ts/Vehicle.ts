@@ -10,9 +10,9 @@ export class Vehicle {
   // This class defines a Vehicle.
   // Private fields for internal properties.
   private licensePlate: string
-  public color: string
+  private color: string
   private readonly doors: number
-  public speed: number = 0
+  private speed: number = 0
   private readonly maxSpeed: number
 
   // The constructor for the Vehicle class.]

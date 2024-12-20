@@ -15,7 +15,7 @@ public class Airplane {
      *
      * @param speed of the airplane
     */
-    private int speed;
+    protected int speed;
 
     /**
      * Creates the base airplane.

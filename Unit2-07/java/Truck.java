@@ -13,7 +13,7 @@ public class Truck extends Vehicle {
     /**
      * Variable.
     */
-    private String licensePlateNumber = "";
+    protected String licensePlateNumber = "";
 
     /**
      * Creates the base truck.
@@ -45,9 +45,7 @@ public class Truck extends Vehicle {
     */
     public String getStatus() {
         final String lineBreak = "\n";
-        String status = " -> Speed: " + this.getSpeed() + lineBreak;
-        status += " -> MaxSpeed: " + this.getMaxSpeed() + lineBreak;
-        status += " -> Color: " + this.getColour() + lineBreak;
+        super.status();
         status += " -> License Plate: " + this.licensePlateNumber + lineBreak;
 
         return status;

@@ -9,16 +9,6 @@
 import { Airplane } from "./Airplane"
 import { Jet } from "./Jet"
 
-/**
-* This is the flytest class.
-*/
-class FlyTest {
-  // Constructor.
-  private FlyTest() {
-    }
-
-  // Set jet speed.
-  public static main() {
     let biplane = new Airplane()
     biplane.setSpeed(212)
     console.log(biplane.getSpeed())
@@ -35,7 +25,3 @@ class FlyTest {
       }
     }
     console.log(biplane.getSpeed())
-  }
-}
-
-FlyTest.main()
